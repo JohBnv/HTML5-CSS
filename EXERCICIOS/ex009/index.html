@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="jbicon.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente 
+       aumente e diminua o tamanho do seu navegados.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotoP.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/fotoM.png" type="image/png">
+        <img src="imagens/fotoG.png" alt="Imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Áudio </h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls >
+        <source src="media/Oh Christmas Tree - DJ Williams.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não consegue reproduzir o áudio.
+           <a href="media/Oh Christmas Tree - DJ Williams.mp3" 
+           download="Oh Christmas Tree - DJ Williams.mp3" type="audio/mpeg">
+           Clique aqui para baixar o arquivo
+           </a>.
+        </p>
+    </audio>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esse video está hospedado no meu servidor.</p>
+    <video width="500" height="300" poster="imagens/coffee.jpg" controls>
+        <source src="video/pexels-video.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com o video.</p>
+    </video>
+
+    <h1>Inserindo video com hospedagem externa</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MmXz2eKzJC8" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fontes</title>
+    <style>
+        /*Importando fonte externa por link*/
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        body {
+            font: normal normal 1em arial, helvetica, sans-serif;
+            color: black;    
+        }
+        /*Importando fonte externa baixada*/
+        @font-face {
+            font-family:'bandeira'; /*Criar nome para identificar e colocar no seletor*/
+            src: url('PartyDayDemoRegular.ttf') format('truetype')/*url('mesmafontemformatodiferente') format('')*/;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 3em;
+        }
+        h2 {
+            font-family: 'bandeira', Times, serif;
+            font-size: 2em; 
+            font-weight: normal;
+         }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Numquam, modi. Accusantium perferendis molestias iure esse 
+        porro cum ea quae totam repellendus dolore accusamus 
+        sint, quibusdam inventore quam repellat incidunt officia?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Numquam, modi. Accusantium perferendis molestias iure esse 
+        porro cum ea quae totam repellendus dolore accusamus 
+        sint, quibusdam inventore quam repellat incidunt officia?
+    </p>
+    <h2>Trabalhando com fontes</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Numquam, modi. Accusantium perferendis molestias iure esse 
+        porro cum ea quae totam repellendus dolore accusamus 
+        sint, quibusdam inventore quam repellat incidunt officia?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Numquam, modi. Accusantium perferendis molestias iure esse 
+        porro cum ea quae totam repellendus dolore accusamus 
+        sint, quibusdam inventore quam repellat incidunt officia?
+    </p>
+</body>
+</html>

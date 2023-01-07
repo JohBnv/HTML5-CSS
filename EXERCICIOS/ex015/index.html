@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+
+        div {
+            display: inline-block;
+            background-color: aqua;
+            border-radius: 100px;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+        
+       
+        .d1:hover {
+            background-color: rgb(47, 78, 25100)
+        }
+
+        .d2:hover {
+            background-color: rgb(252, 47, 235);
+        }
+
+        div img {
+            display: none;  /*deixa a foto escondida na div*/
+        }
+        
+        div img {           /*deixa a foto no mesmo tamanho da div*/
+            height: 100px;
+            width: 100px; 
+        }
+
+        div:hover img {      /*a foto escondida na div aparece quando passar o mouse*/
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="d1">
+        
+    </div>
+    <div class="d2">
+        
+    </div>
+    <div class="me">
+        <img src="euuu.png" alt="minha foto">
+    </div>
+    
+</body>
+</html>
