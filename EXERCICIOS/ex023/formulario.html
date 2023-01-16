@@ -14,10 +14,16 @@
 <body>
 
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome <input type="text" name="nome" id="nome"> </p>
-        <p>Sobrenome <input type="text" name="sobrenome" id="sobrenome"> </p>
-        <p>Senha <input type="password" name="senha" id="senha"> </p>
+    <form autocomplete="off" action="cadastro.php" method="post">
+        <!--label é para fazer a ligação com o input
+        para o label use sempre o id como identificador
+        para o php use o NAME-->
+        <p><label for="inome">Nome</label> 
+            <input type="text" name="nome" id="inome"> </p>
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <p>Senha 
+            <input type="password" name="senha" id="senha"> </p>
         <input type="button" value="Enviar">
     </form>
 
