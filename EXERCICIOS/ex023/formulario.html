@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome</label> 
             <input type="text" name="usu" id="inome" placeholder="Nome de usuário"
@@ -38,9 +38,48 @@
             <input type="time" name="time" id="itime">
         </p>
         <p>
-            <input type="submit" value="Enviar">
+            <label for="imail">E-mail</label>
+            <input type="email" name="mail" id="imail" autocomplete="email"
+             required placeholder="Seu melhor e-mail">
+        </p>
+        <p>   
+            <label for="iphone">Telefone</label>
+            <input type="tel" name="tel" id="iphone"
+             autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$"
+             placeholder="(xx) xxxx-xxxx">
+             <!-- patern= "^\(\d{2}\)\d{4,5}-\d{4}$"  -->
+             <!-- patern= "^\d{4,5}-\d{4}$"  -->
+             <!-- Estude sobre RegEx  -->
+        </p>                                     
+        <p>                                      
+            <input type="submit" value="Enviar"> 
             <input type="reset" value="Limpar">
         </p>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+                <!-- Use o Checked para deixar uma opção marcada -->
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut">
+                <label for="iesfut">Futebol</label><br>
+                <input type="checkbox" name="esbas" id="iesbas">
+                <label for="iesbas">Basquet</label><br>
+                <input type="checkbox" name="esvol" id="iesvol" checked>
+                <label for="iesvol">Vôlei</label><br>
+                <input type="checkbox" name="estenis" id="iestenis">
+                <label for="iestenis">Tênis</label><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+                <!-- Em ratio, para que seja possivél
+                marcar só uma opção, coloque o mesmo nome no NAME -->
+            <p>
+                <input type="radio" name="sexo" id="imasc" value="M">
+                <label for="imasc">Masculino</label><br>
+                <input type="radio" name="sexo" id="ifem" value="F">
+                <label for="ifem">feminino</label><br>
+            </p>
+        </fieldset>
     </form>
     
 </body>
