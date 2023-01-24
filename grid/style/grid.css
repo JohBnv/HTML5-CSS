@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.container {
+    background-color: rgb(129, 129, 129);
+    border: 2px solid red;
+    padding: 10px;
+    display: grid;
+    
+}
+
+.container div {
+    background-color: #cacaca;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4; /* ocupa 3 colunas*/
+}
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#item-3 {
+    justify-self: end; /*Alinhamento horizontal*/
+    height: 200px;
+}
+#item-4 {
+    align-self: center; /*Alinhamento vertical*/
+}
+#item-5 {
+    justify-self: start;
+    height: 200px;
+}
+#item-6 {
+    align-self: flex-end;
+}

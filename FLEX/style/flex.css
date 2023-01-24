@@ -1,0 +1,28 @@
+.container {
+    background-color: #EEE;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 810px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 400px;
+    width: 400px;
+}
+
+#item-2 {
+   order: 1;
+
+} 
+
+#item-1 {
+    order: 3;
+} 
